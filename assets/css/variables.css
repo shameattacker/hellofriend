@@ -1,0 +1,11 @@
+:root {
+    --color-primary: #292F36;
+    --color-accent: #CDA274;
+    --color-bg: #FFFFFF;
+    --color-bg-light: #F4F0EC;
+    --color-text: #292F36;
+    --color-text-light: #4D5053;
+    --font-heading: 'DM Serif Display', serif;
+    --font-body: 'Jost', sans-serif;
+}
+

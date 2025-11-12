@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno - Interior Design</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <svg class="logo-icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z" fill="#CDA274"/>
+                        <path d="M17 8L12 13H22L17 8Z" fill="white"/>
+                        <path d="M17 26L12 21H22L17 26Z" fill="white"/>
+                        <path d="M8 17L13 12V22L8 17Z" fill="white"/>
+                        <path d="M26 17L21 12V22L26 17Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">Interno</span>
+                </a>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#pages" class="nav-link">Pages</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="auth-buttons" id="auth-buttons">
+                        <button class="btn btn-auth" data-modal="login-modal">Sign In</button>
+                        <button class="btn btn-auth btn-auth-primary" data-modal="register-modal">Sign Up</button>
+                    </div>
+                    <div class="user-menu" id="user-menu" style="display: none;">
+                        <button class="user-avatar" id="user-avatar-btn">
+                            <span id="user-initials">U</span>
+                        </button>
+                        <div class="user-dropdown" id="user-dropdown">
+                            <div class="user-info">
+                                <p class="user-name" id="user-name">User</p>
+                                <p class="user-email" id="user-email">user@example.com</p>
+                            </div>
+                            <a href="pages/account.html" class="dropdown-link">My Account</a>
+                            <a href="#" class="dropdown-link">My Projects</a>
+                            <a href="#" class="dropdown-link">Settings</a>
+                            <button class="dropdown-link logout-btn" id="logout-btn">Logout</button>
+                        </div>
+                    </div>
+                    <button class="search-icon" aria-label="Search" id="search-toggle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 19L14.65 14.65" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="images/firstBackground.png" alt="Interior Design" class="hero-bg-img">
+        </div>
+        <div class="container">
+            <div class="hero-content" style="margin-left: -40px;">
+                <h1 class="hero-title">Let's Create Your Dream Interior</h1>
+                <p class="hero-subtitle">The world needs innovators and problem solvers who can challenge into people's reproduction. We have an expertise, curiosity, talent, transformative models, challenging the status.</p>
+                <button class="btn btn-primary" data-modal="contact-modal">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title">Creative Design</h3>
+                    <p class="service-description">Bringing the interior to achieve a healthier environment for the people living right space.</p>
+                    <a href="#" class="service-link">View More</a>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">Furniture</h3>
+                    <p class="service-description">Flexible sofas that are used to make a room or building suitable for living or working.</p>
+                    <a href="#" class="service-link">View More</a>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">Flooring</h3>
+                    <p class="service-description">For a long time, I have a number of options for a few students to provide a working solution.</p>
+                    <a href="#" class="service-link">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenging" id="about">
+        <div class="container">
+            <div class="challenging-content">
+                <div class="challenging-text">
+                    <h2 class="challenging-title">We Tackle The Most Challenging Designs</h2>
+                    <p class="challenging-description">The world needs innovators and problem solvers who can challenge into people's reproduction. We have an expertise, curiosity, talent, transformative models, challenging the status.</p>
+                    <button class="btn btn-primary" data-modal="contact-modal">Get Free Estimate</button>
+                </div>
+                <div class="challenging-image">
+                    <img src="images/kitchen.png" alt="Modern Kitchen" class="challenging-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What the People Thinks About Interno</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/women.png" alt="Lisa Chapman">
+                    </div>
+                    <h4 class="testimonial-name">Lisa Chapman</h4>
+                    <p class="testimonial-role">CEO, Interno</p>
+                    <p class="testimonial-text">The world needs innovators and problem solvers who can challenge into people's reproduction. We have an expertise, curiosity, talent, transformative models, challenging the status.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/men-glasses.png" alt="Mark Smith">
+                    </div>
+                    <h4 class="testimonial-name">Mark Smith</h4>
+                    <p class="testimonial-role">Designer</p>
+                    <p class="testimonial-text">The world needs innovators and problem solvers who can challenge into people's reproduction. We have an expertise, curiosity, talent, transformative models, challenging the status.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/woman-withWightHair.jpg" alt="Lara Chapman">
+                    </div>
+                    <h4 class="testimonial-name">Lara Chapman</h4>
+                    <p class="testimonial-role">Client</p>
+                    <p class="testimonial-text">The world needs innovators and problem solvers who can challenge into people's reproduction. We have an expertise, curiosity, talent, transformative models, challenging the status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners-grid">
+                <div class="partner-logo">Homelife</div>
+                <div class="partner-logo">VS</div>
+                <div class="partner-logo">BRAND</div>
+                <div class="partner-logo">Nature Home</div>
+                <div class="partner-logo">Modern</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+            <p class="section-subtitle">With tools to make every part of your process more human and a support team you'll get to help you, making a project with us, an easy, happy process.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/sofa.png" alt="Minimalist City Living Building">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Minimalist City Living Building</h3>
+                        <p class="project-category">Architecture</p>
+                        <button class="project-btn" data-project="0">
+                            <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L9 10L1 19" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/chairsWithTable.png" alt="Creative Workplace Design">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Creative Workplace Design</h3>
+                        <p class="project-category">Interior</p>
+                        <button class="project-btn" data-project="1">
+                            <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L9 10L1 19" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/bedroom.png" alt="Bedroom Interior For Kids">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Bedroom Interior For Kids</h3>
+                        <p class="project-category">Interior</p>
+                        <button class="project-btn" data-project="2">
+                            <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L9 10L1 19" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/bedsideTable.png" alt="Light Ambience Interior Design">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Light Ambience Interior Design</h3>
+                        <p class="project-category">Decoration</p>
+                        <button class="project-btn" data-project="3">
+                            <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L9 10L1 19" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number">12</h3>
+                    <p class="stat-label">Years Of Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">5K</h3>
+                    <p class="stat-label">Success Project</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">1K</h3>
+                    <p class="stat-label">Active Project</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">4K</h3>
+                    <p class="stat-label">Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs">
+        <div class="container">
+            <h2 class="section-title">Recent Blogs</h2>
+            <p class="section-subtitle">Get updates about our latest trends and techniques used to interior design project works.</p>
+            <div class="blogs-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/newKitchen.png" alt="Residential Interior Design">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Kitchen Design</span>
+                        <h3 class="blog-title">Residential Interior Design For Your Home</h3>
+                        <p class="blog-date">November 25, 2021</p>
+                        <button class="blog-btn" data-blog="0">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8L1 15" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/sofa.png" alt="Wall Art">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Interior Design</span>
+                        <h3 class="blog-title">How To Choose The Best Wall Art For Your Home?</h3>
+                        <p class="blog-date">November 25, 2021</p>
+                        <button class="blog-btn" data-blog="1">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8L1 15" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/chairsWithTable.png" alt="Kitchen Furniture">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Kitchen Design</span>
+                        <h3 class="blog-title">Tips To Choose The Best Kitchen Furniture</h3>
+                        <p class="blog-date">November 25, 2021</p>
+                        <button class="blog-btn" data-blog="2">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8L1 15" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/kitchen.png" alt="Minimalist Design">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Interior Design</span>
+                        <h3 class="blog-title">Minimalist Interior Design & Furniture</h3>
+                        <p class="blog-date">November 25, 2021</p>
+                        <button class="blog-btn" data-blog="3">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8L1 15" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/bedroom.png" alt="Lighting Solutions">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Interior Design</span>
+                        <h3 class="blog-title">Lighting Solutions For Modern Living Spaces</h3>
+                        <p class="blog-date">November 25, 2021</p>
+                        <button class="blog-btn" data-blog="4">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8L1 15" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/bedsideTable.png" alt="Modern Kitchen">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Kitchen Design</span>
+                        <h3 class="blog-title">Modern Kitchen Design Trends 2021</h3>
+                        <p class="blog-date">November 25, 2021</p>
+                        <button class="blog-btn" data-blog="5">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8L1 15" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Wanna join the interno?</h2>
+                <p class="cta-subtitle">Contact Us & Get a Free Consultation</p>
+                <button class="btn btn-cta" data-modal="contact-modal">Contact With Us</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#home" class="logo">
+                        <svg class="logo-icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z" fill="#CDA274"/>
+                            <path d="M17 8L12 13H22L17 8Z" fill="white"/>
+                            <path d="M17 26L12 21H22L17 26Z" fill="white"/>
+                            <path d="M8 17L13 12V22L8 17Z" fill="white"/>
+                            <path d="M26 17L21 12V22L26 17Z" fill="white"/>
+                        </svg>
+                        <span class="logo-text">Interno</span>
+                    </a>
+                    <p class="footer-description">We are the leading architect and interior design firm in the world.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1H6C5.06087 1 4.17128 1.37928 3.52024 2.05442C2.86919 2.72956 2.5 3.64348 2.5 4.6V6.8H0.5V9.4H2.5V17H5.1V9.4H7.1L7.5 6.8H5.1V4.6C5.1 4.36274 5.19482 4.13548 5.36443 3.96587C5.53404 3.79626 5.7613 3.70144 5.9985 3.70144H8V1Z" fill="#292F36"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 2C17.8 2.3 17.1 2.5 16.3 2.6C17.1 2.1 17.7 1.3 18 0.3C17.3 0.8 16.5 1.1 15.6 1.4C14.9 0.7 14 0.3 13 0.3C11 0.3 9.4 1.9 9.4 3.9C9.4 4.1 9.4 4.3 9.5 4.5C6.6 4.4 4 3.1 2.1 1.1C1.9 1.5 1.8 1.9 1.8 2.4C1.8 3.3 2.2 4.1 2.9 4.6C2.3 4.6 1.8 4.4 1.3 4.2C1.3 5.1 1.8 5.9 2.6 6.2C2.4 6.2 2.1 6.2 1.9 6.1C2.1 6.8 2.7 7.4 3.4 7.6C3.2 7.6 2.9 7.7 2.7 7.6C3.1 8.2 3.7 8.6 4.4 8.6C3.5 9.2 2.4 9.6 1.2 9.6C1 9.6 0.8 9.6 0.6 9.5C1.7 10.1 2.9 10.5 4.2 10.5C13 10.5 17.8 6.2 17.8 2.4C17.8 2.3 17.8 2.2 17.8 2.1C18.6 1.6 19.3 0.9 19.8 0.2C19.1 0.5 18.3 0.7 17.5 0.8C18.3 0.3 18.9 -0.3 19.2 -1C18.5 -0.6 17.7 -0.4 16.8 -0.2C16.1 -0.9 15.1 -1.3 14 -1.3C11.9 -1.3 10.3 0.3 10.3 2.3C10.3 2.5 10.3 2.7 10.4 2.9C7.5 2.8 4.9 1.5 3 -0.5C2.8 -0.1 2.7 0.3 2.7 0.7C2.7 1.6 3.1 2.4 3.8 2.9C3.2 2.9 2.7 2.7 2.2 2.5C2.2 3.4 2.8 4.2 3.6 4.5C3.4 4.5 3.2 4.5 3 4.4C3.4 5.1 4 5.7 4.7 5.9C4.5 5.9 4.3 6 4.1 5.9C4.5 6.5 5.1 6.9 5.8 6.9C4.9 7.5 3.8 7.9 2.6 7.9C2.4 7.9 2.2 7.9 2 7.8C3.1 8.4 4.3 8.8 5.6 8.8C14 8.8 18.8 4.5 18.8 0.4C18.8 0.3 18.8 0.2 18.8 0.1C19.6 -0.4 20.3 -1.1 20.8 -1.8C20.1 -1.5 19.3 -1.3 18.5 -1.1Z" fill="#292F36"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 0.5H0.5V16.5H16.5V0.5Z" stroke="#292F36" stroke-width="2"/>
+                                <path d="M8.5 5.5C9.88071 5.5 11 6.61929 11 8C11 9.38071 9.88071 10.5 8.5 10.5C7.11929 10.5 6 9.38071 6 8C6 6.61929 7.11929 5.5 8.5 5.5Z" stroke="#292F36" stroke-width="2"/>
+                                <path d="M12.5 1.5H14.5" stroke="#292F36" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 0.5C4.08172 0.5 0.5 4.08172 0.5 8.5C0.5 12.9183 4.08172 16.5 8.5 16.5C12.9183 16.5 16.5 12.9183 16.5 8.5C16.5 4.08172 12.9183 0.5 8.5 0.5ZM8.5 14.5C5.18629 14.5 2.5 11.8137 2.5 8.5C2.5 5.18629 5.18629 2.5 8.5 2.5C11.8137 2.5 14.5 5.18629 14.5 8.5C14.5 11.8137 11.8137 14.5 8.5 14.5Z" fill="#292F36"/>
+                                <path d="M12.5 5.5H10.5V3.5H12.5V5.5Z" fill="#292F36"/>
+                                <path d="M8.5 5.5C6.84315 5.5 5.5 6.84315 5.5 8.5C5.5 10.1569 6.84315 11.5 8.5 11.5C10.1569 11.5 11.5 10.1569 11.5 8.5C11.5 6.84315 10.1569 5.5 8.5 5.5Z" fill="#292F36"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Pages</h4>
+                        <a href="#" class="footer-link">Style Guide</a>
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Services</a>
+                        <a href="#" class="footer-link">Licenses</a>
+                        <a href="#" class="footer-link">Changelog</a>
+                        <a href="#" class="footer-link">404</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Explore</h4>
+                        <a href="#about" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Team</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                        <a href="#" class="footer-link">Career</a>
+                        <a href="#projects" class="footer-link">Our Project</a>
+                        <a href="#contact" class="footer-link">Contact Us</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Contact</h4>
+                        <p class="footer-contact">55 East Birchwood Ave. Brooklyn, New York 11201, USA.</p>
+                        <a href="mailto:contact@interno.com" class="footer-contact">contact@interno.com</a>
+                        <a href="tel:1234567890" class="footer-contact">(123) 456 - 7890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="contact-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title">Get Free Estimate</h2>
+            <p class="modal-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="interior-design">Interior Design</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="flooring">Flooring</option>
+                        <option value="consultation">Consultation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Send Message
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L17 8.5M17 8.5L10 1.5M17 8.5L10 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="project-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-project">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-project-content">
+                <div class="modal-project-image">
+                    <img id="project-modal-img" src="" alt="Project">
+                </div>
+                <div class="modal-project-info">
+                    <h2 class="modal-title" id="project-modal-title"></h2>
+                    <p class="modal-category" id="project-modal-category"></p>
+                    <p class="modal-description" id="project-modal-description"></p>
+                    <button class="btn btn-primary" data-modal="contact-modal">
+                        Get Free Estimate
+                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8.5L17 8.5M17 8.5L10 1.5M17 8.5L10 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="blog-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-blog">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-blog-content">
+                <div class="modal-blog-image">
+                    <img id="blog-modal-img" src="" alt="Blog">
+                </div>
+                <div class="modal-blog-info">
+                    <span class="modal-tag" id="blog-modal-tag"></span>
+                    <h2 class="modal-title" id="blog-modal-title"></h2>
+                    <p class="modal-date" id="blog-modal-date"></p>
+                    <div class="modal-blog-text" id="blog-modal-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <div class="search-modal" id="search-modal">
+        <div class="search-overlay"></div>
+        <div class="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Search...">
+            <button class="search-close" id="search-close">&times;</button>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+
+    <div class="scroll-top" id="scroll-top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 15V5M10 5L5 10M10 5L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="modal" id="login-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title">Sign In</h2>
+            <p class="modal-subtitle">Welcome back! Please sign in to your account.</p>
+            <form class="auth-form" id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email Address *</label>
+                    <input type="email" id="login-email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password *</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Sign In
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L17 8.5M17 8.5L10 1.5M17 8.5L10 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <p class="auth-switch">
+                    Don't have an account? <a href="#" class="switch-link" data-modal="register-modal">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 class="modal-title">Create Account</h2>
+            <p class="modal-subtitle">Join us and start creating your dream interior.</p>
+            <form class="auth-form" id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name *</label>
+                    <input type="text" id="register-name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email Address *</label>
+                    <input type="email" id="register-email" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone">Phone Number</label>
+                    <input type="tel" id="register-phone" name="phone">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password *</label>
+                    <input type="password" id="register-password" name="password" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password *</label>
+                    <input type="password" id="register-confirm" name="confirm" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span>I agree to the <a href="#">Terms & Conditions</a></span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Create Account
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L17 8.5M17 8.5L10 1.5M17 8.5L10 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <p class="auth-switch">
+                    Already have an account? <a href="#" class="switch-link" data-modal="login-modal">Sign In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

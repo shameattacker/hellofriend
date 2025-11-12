@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Interno</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <svg class="logo-icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z" fill="#CDA274"/>
+                        <path d="M17 8L12 13H22L17 8Z" fill="white"/>
+                        <path d="M17 26L12 21H22L17 26Z" fill="white"/>
+                        <path d="M8 17L13 12V22L8 17Z" fill="white"/>
+                        <path d="M26 17L21 12V22L26 17Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">Interno</span>
+                </a>
+                <nav class="nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#about" class="nav-link">About Us</a>
+                    <a href="../index.html#services" class="nav-link">Services</a>
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                    <a href="../index.html#contact" class="nav-link">Contact Us</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="user-menu" id="user-menu">
+                        <button class="user-avatar" id="user-avatar-btn">
+                            <span id="user-initials">U</span>
+                        </button>
+                        <div class="user-dropdown" id="user-dropdown">
+                            <div class="user-info">
+                                <p class="user-name" id="user-name">User</p>
+                                <p class="user-email" id="user-email">user@example.com</p>
+                            </div>
+                            <a href="account.html" class="dropdown-link active">My Account</a>
+                            <a href="#" class="dropdown-link">My Projects</a>
+                            <a href="#" class="dropdown-link">Settings</a>
+                            <button class="dropdown-link logout-btn" id="logout-btn">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="account-section">
+        <div class="container">
+            <div class="account-layout">
+                <div class="account-sidebar">
+                    <div class="account-profile-card">
+                        <div class="profile-avatar-large" id="profile-avatar-large">
+                            <span id="profile-initials-large">U</span>
+                        </div>
+                        <h2 class="profile-name" id="profile-name-large">User Name</h2>
+                        <p class="profile-email" id="profile-email-large">user@example.com</p>
+                        <button class="btn btn-secondary" id="edit-profile-btn">Edit Profile</button>
+                    </div>
+                    <nav class="account-nav">
+                        <a href="#profile" class="account-nav-link active" data-tab="profile">Profile</a>
+                        <a href="#projects" class="account-nav-link" data-tab="projects">My Projects</a>
+                        <a href="#settings" class="account-nav-link" data-tab="settings">Settings</a>
+                        <a href="#notifications" class="account-nav-link" data-tab="notifications">Notifications</a>
+                    </nav>
+                </div>
+                <div class="account-content">
+                    <div class="account-tab active" id="profile-tab">
+                        <h2 class="account-title">Profile Information</h2>
+                        <form class="account-form" id="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="profile-first-name">First Name *</label>
+                                    <input type="text" id="profile-first-name" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-last-name">Last Name *</label>
+                                    <input type="text" id="profile-last-name" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="profile-email">Email Address *</label>
+                                <input type="email" id="profile-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="profile-phone">Phone Number</label>
+                                <input type="tel" id="profile-phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="profile-address">Address</label>
+                                <input type="text" id="profile-address" name="address">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="profile-city">City</label>
+                                    <input type="text" id="profile-city" name="city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-country">Country</label>
+                                    <input type="text" id="profile-country" name="country">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="profile-bio">Bio</label>
+                                <textarea id="profile-bio" name="bio" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+                    </div>
+                    <div class="account-tab" id="projects-tab">
+                        <h2 class="account-title">My Projects</h2>
+                        <div class="projects-list" id="user-projects-list">
+                            <div class="empty-state">
+                                <p>You don't have any saved projects yet.</p>
+                                <a href="../index.html#projects" class="btn btn-primary">Browse Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-tab" id="settings-tab">
+                        <h2 class="account-title">Account Settings</h2>
+                        <form class="account-form" id="settings-form">
+                            <div class="form-group">
+                                <label for="current-password">Current Password *</label>
+                                <input type="password" id="current-password" name="currentPassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="new-password">New Password *</label>
+                                <input type="password" id="new-password" name="newPassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-new-password">Confirm New Password *</label>
+                                <input type="password" id="confirm-new-password" name="confirmPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Password</button>
+                        </form>
+                        <div class="settings-section">
+                            <h3 class="settings-subtitle">Privacy Settings</h3>
+                            <div class="settings-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="email-notifications" checked>
+                                    <span>Email notifications</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sms-notifications">
+                                    <span>SMS notifications</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="marketing" checked>
+                                    <span>Marketing emails</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-tab" id="notifications-tab">
+                        <h2 class="account-title">Notifications</h2>
+                        <div class="notifications-list" id="notifications-list">
+                            <div class="notification-item">
+                                <div class="notification-content">
+                                    <h4>Welcome to Interno!</h4>
+                                    <p>Thank you for joining our community.</p>
+                                    <span class="notification-time">2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script type="module" src="../assets/js/main.js"></script>
+    <script type="module" src="../assets/js/modules/account.js"></script>
+</body>
+</html>
+
