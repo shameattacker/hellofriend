@@ -8,5 +8,5 @@ Fsociety — вымышленная хакерская группа из сер�
 
 ![Fsociety](fsociety.jpg)
 
-https://github.com/shameattacker/hellofriend/deployments/github-pages
+https://shameattacker.github.io/hellofriend/
 либо же в actions - all workflows
